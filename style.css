@@ -1,0 +1,129 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  background-color: #f0f8ff;
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #003366;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.speed-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.symbol {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  object-fit: contain;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+  margin-top: 30px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 12px;
+  font-size: 16px;
+  width: 300px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003366;
+  transform: scale(1.03);
+}
+
+#speed {
+  width: 60px;
+  text-align: center;
+}
+
+#increaseSpeed,
+#decreaseSpeed {
+  width: 40px;
+  padding: 10px 0;
+  font-size: 18px;
+  border-radius: 6px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+#increaseSpeed:hover,
+#decreaseSpeed:hover {
+  background-color: #004d99;
+}
+
+#result {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#correctAnswer {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
