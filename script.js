@@ -50,7 +50,7 @@ function applySubstitutions(text) {
 function getSymbolImage(letter) {
   if (letter === "null") return "symbol/null.jpg";
   if (letter === "number") return "symbol/number.jpg";
-  return `symbol/${letter.toLowerCase()}.jpg`;
+  return `symbol/${letter.toUpperCase()}.jpg`;
 }
 
 // Converts the message into a sequence of symbols and displays them with interval
